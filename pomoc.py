@@ -1,5 +1,6 @@
 
 class Klocki:
+    @staticmethod
     def multiplication_tables(n):
         s = ""
         for i in range(1,n+1):
@@ -11,7 +12,7 @@ class Klocki:
             s += '\n'
         return(s)
 
-
+    @staticmethod
     def genrate_text(file_name:str,content:str):
         file_name = file_name + ".txt"
         with open(file_name, "w") as text_file:
